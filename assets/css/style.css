@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover-profile {
+    width: 150px;
+    height: 150px;
+}
+
+/*********************  TOUS LES MEDIAS *******************/
+body {
+    background-color: #E3F2FD;
+}
+
+.bg-primary {
+    background-color: #0D47A1 !important;
+}
+
+.headin {
+    font-size: 1.5em;
+    color: #9933CC;
+    border-bottom: 1px solid;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#esperienze,
+#altre-esperienze,
+#formazione,
+#competenze,
+#lingue,
+#interessi,
+#contatti {
+    padding-top: 2rem;
+    /*text-align: center;*/
+}
+
+.container {
+    /*height: 100%;*/
+    height: 100vh;
+}
+
+.competenze {
+    font-size: 12px;
+}
+
+/* ESPERIENZE E ALTRE ESPERIENZE*/
+#esperienze,
+#altre-esperienze {
+    font-style: italic;
+    padding: 0.5em;
+    color: #0D47A1;
+}
+
+#esperienze .anni,
+#altre-esperienze .anni {
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#esperienze p,
+#altre-esperienze p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.formazione p {
+    margin-top: 25px;
+}
+
+/* ------------------COMPETENZE ------------ */
+
+#competenze .progress {
+    height: 30px;
+    margin-top: 30px;
+    background-color: #E57373;
+}
+
+#competenze .progress-bar {
+    font-size: 2vh;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+.competenze p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* ------------------ LINGUE DE INTERESSI ------------ */
+
+#lingue ul {
+    color: #0D47A1;
+    list-style: none;
+    padding: 1.2em;
+}
+
+#interessi ul {
+    color: #0D47A1;
+    list-style: none;
+    padding: 1.2em;
+}
+
+.container .lingue p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* CONTATTI */
+#contatti .container p {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#caret {
+    float: right;
+    font-size: 40px;
+}
+
+
+
+
+
+/*********************  SMARTPHONES ET TABLETTES *******************/
+@media screen and (max-width: 991.98px) {
+
+    #about-me .laptop,
+    #navbar img {
+        display: none;
+    }
+
+    .mobile {
+        background-color: #0D47A1;
+        height: 100vh;
+        text-align: center;
+    }
+
+    section#esperienze,
+    section#competenze {
+        height: 990px;
+    }
+
+    section#competenze .container .competenze .row .col-md-6 {
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    #about-me .mobile img {
+        margin-top: 70px;
+    }
+
+    #about-me .mobile h3 {
+        font-size: 15px;
+        color: white;
+        margin-top: 20px;
+        /*text-transform: uppercase;*/
+    }
+
+    #about-me .mobile h4 {
+        font-size: 15px;
+        margin-top: 20px;
+        /*color: rgb(240, 236, 236);*/
+        color: rgb(163, 163, 163);
+    }
+
+    #about-me .mobile h4 a {
+        text-decoration: none;
+        color: rgb(163, 163, 163);
+        /*font-weight: bold;*/
+    }
+
+    #about-me .mobile a {
+        margin-top: 20px;
+        font-size: 17px;
+        /*text-transform: uppercase;*/
+    }
+
+    .responsive1 {
+        margin: auto;
+        text-align: center;
+    }
+
+    .responsive2 {
+        margin: auto;
+    }
+}
+
+
+
+/********************* PC ET TV *******************/
+@media (min-width: 992px) {
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        width: 17em;
+        height: 100vh;
+        text-align: center;
+    }
+
+    #navbar .navbar-brand {
+        padding: 10px;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar .collapse .navbar-nav {
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    section {
+        margin-left: 30%;
+    }
+
+    .responsive1 {
+        margin-left: 25%;
+    }
+
+    .responsive1 span {
+        font-size: 10px;
+    }
+
+    #about-me .mobile {
+        display: none;
+    }
+
+    #about-me .laptop {
+        padding: 20%;
+        text-align: center;
+    }
+
+    #about-me .laptop .headin
+
+    /*#esperienze .headin, #altre-esperienze .headin, #formazione .headin, #competenze .headin, #lingue .headin, #contatti .headin*/
+        {
+        font-size: 2em;
+        color: #9933CC;
+        border-bottom: 1px solid;
+    }
+
+    /*#esperienze, #altre-esperienze, #formazione, #competenze, #lingue, #contatti{
+        padding: 5%;
+        text-align: center;
+    }*/
+
+    #about-me .laptop h3,
+    #contatti h3 {
+        font-size: 20px;
+        /*text-transform: uppercase;*/
+    }
+
+    #about-me .laptop h4,
+    #contatti h4 {
+        font-size: 20px;
+        color: rgb(163, 163, 163);
+    }
+
+    #about-me .laptop h4 a {
+        text-decoration: none;
+        color: rgb(163, 163, 163);
+        font-weight: bold;
+    }
+
+    #about-me .laptop p,
+    #contatti p {
+        font-size: 15px;
+        color: green;
+    }
+
+    #esperienze .headin {
+        font-size: 2em;
+        color: #9933CC;
+        border-bottom: 1px solid;
+    }
+
+
+}
